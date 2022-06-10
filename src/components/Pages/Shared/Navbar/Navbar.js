@@ -28,7 +28,9 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<a className="btn text-white bg-black border-0"> Download Resume </a>
+				<a className="btn text-white bg-black border-0"
+				href='https://drive.google.com/file/d/1ivFKVGeTnIYoN3LY1ciYXC414belrRla/view?usp=sharing' target = '_blank'
+				> Download Resume </a>
 			</div>
 		</div>
 	);

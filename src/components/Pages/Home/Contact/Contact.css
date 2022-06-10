@@ -1,0 +1,31 @@
+.contact-container{
+	background-color: #caf0f8;
+	padding: 2rem 1rem;
+}
+.contact-wrap{
+	max-width: 50vw;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	background-color: #90e0ef;
+	border-radius: 0.5rem;
+}
+
+label{
+	margin: 0.5rem 0;
+	display: block;
+}
+.contact-button{
+	background-color: #023e8a;
+	letter-spacing: 0.2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	margin-top: 0.5rem;
+	transition: 0.3s all ease;
+}
+.contact-button:hover{
+	transform: translate(1.5);
+	background-color: #284a75;
+}
+.contact-title{
+	color: #03045e;
+}
