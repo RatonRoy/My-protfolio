@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
 	const form = useRef();
@@ -11,10 +12,12 @@ const Contact = () => {
 		emailjs.sendForm('service_0rrub29', 'template_slgtyfs', form.current, 'LyTMhmQkdXMdcCdlu')
 			.then((result) => {
 				console.log(result.text);
-				console.log('message sent');
+				toast('message sent');
 			}, (error) => {
 				console.log(error.text);
 			});
+
+			form.value = ''
 	};
 
 	return (
