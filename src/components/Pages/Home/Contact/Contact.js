@@ -20,7 +20,7 @@ const Contact = () => {
 	return (
 		<div className="contact-container">
 			<h1 className='text-center text-2xl mb-4 contact-title'> Contact Me </h1>
-			<div className="contact-wrap">
+			<div className="contact-wrap  mx-auto lg:w-1/2 md:w-2/3 sm:w-3/4 lg:px-1.5rem md:px-1rem sm:px-0.3rem ">
 				<form ref={form} onSubmit={sendEmail} className='px-20'>
 					<label>Name</label>
 					
@@ -33,7 +33,7 @@ const Contact = () => {
 					<label>Message</label>
 					
 					<textarea name="message" placeholder='Massage' cols='40' rows='5'
-					 className='input w-full max-w-xs' required
+					 className='input w-full max-w-xs py-2' required
 					/>
 					<br />
 					<input type="submit" value="Send" className=" contact-button text-white input w-1/2 max-w-xs" />
